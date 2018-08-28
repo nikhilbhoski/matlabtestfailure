@@ -1,8 +1,8 @@
 classdef testSquareRoot < matlab.unittest.TestCase
     
     properties (TestParameter)
-        val = {4,16,0,25};
-        res = {1,1,0,1};
+        val = {4,16};
+        res = {3,4};
     end
     
     
@@ -11,11 +11,8 @@ classdef testSquareRoot < matlab.unittest.TestCase
             testCase.verifyEqual(squareRoot(val),res);
         end
         
-        
-        
     end
-    
-    
+  
     
 end
 
